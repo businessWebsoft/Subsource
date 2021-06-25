@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 					monochrome = true, 
 					dryRun = false, 
 					glue = {"Parallel"},//tags = "@persent", 
-					features = {"C:\\Users\\BWS-Tester\\git\\SubSource\\src\\test\\resources\\Parallel\\Quiz.feature"}
+					features = {"./src/test/resources/Parallel/Quiz.feature"}
 				)
 
 public class ParallelRun extends AbstractTestNGCucumberTests 
