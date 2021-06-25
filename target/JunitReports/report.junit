@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="241.26">
+<testcase classname="To validate the Social Hiring Features" name="To Validate The select shops for posting window" time="33.941">
+<failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=91.0.4472.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 32e9df539988211d02976c36d14e87bd" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[Given Navigate To The Social hirirng page...................................passed
+When Click on Select Shops for posting link.................................passed
+Then Select shops for posting PopUp Winddow Should Display With The Titile "Select shop(s) for posting".passed
+When Click on create custom shop link.......................................passed
+Then Validating the create custom shop by entering invalid data.............failed
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32e9df539988211d02976c36d14e87bd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
+	at com.pages.SocialHiringPage.clickon_create_Custom_Confirm_Button(SocialHiringPage.java:204)
+	at Parallel.SocialHiringTest.validating_the_create_custom_shop_by_entering_invalid_data(SocialHiringTest.java:84)
+	at ✽.Validating the create custom shop by entering invalid data(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Socialhiring.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="To validate the Social Hiring Features" name="To Validate The Select Shop for posting" time="31.083">
+<failure message="element click intercepted: Element &lt;a&gt;...&lt;/a&gt; is not clickable at point (165, 239). Other element would receive the click: &lt;div _ngcontent-c1=&quot;&quot; class=&quot;backdrop ng-star-inserted&quot; style=&quot;border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 39f442eba6a41d6be1c6daa8a8d6a60d" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given Navigate To The Social hirirng page...................................passed
+When Click on Select Shops for posting link.................................failed
+When Search for the shop number"457"........................................skipped
+And Select the "457" number shop............................................skipped
+Then "457" number shop should be selected...................................skipped
+When Click on To Plus button................................................skipped
+Then "457" number should be selected in To Section..........................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (165, 239). Other element would receive the click: <div _ngcontent-c1="" class="backdrop ng-star-inserted" style="border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);"></div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39f442eba6a41d6be1c6daa8a8d6a60d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
+	at com.pages.SocialHiringPage.click_on_Select_Shops_For_Posting(SocialHiringPage.java:153)
+	at Parallel.SocialHiringTest.click_on_select_shops_for_posting_link(SocialHiringTest.java:51)
+	at ✽.Click on Select Shops for posting link(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Socialhiring.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="To validate the Social Hiring Features" name="To Validate The Subject Text" time="23.334">
+<system-out><![CDATA[Given Navigate To The Social hirirng page...................................passed
+When Eneter The Sbuject Text as "SandWich Artist Going to Hire New Employees".passed
+Then The Email Content Should have "SandWich Artist Going to Hire New Employees".passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the Social Hiring Features" name="To Validate Create new Template and Delete Template" time="45.17">
+<system-out><![CDATA[Given Navigate To The Social hirirng page...................................passed
+When Eneter The Sbuject Text as "SandWich Artist Going to Hire New Employees".passed
+When chose template as "Create new template...".............................passed
+And Click on Save template..................................................passed
+Then The template Should not be saved and Pop Up message Should Be Displayed as "Please enter name and description to save template.".passed
+When Enter New template Name as "Testing"...................................passed
+And enter new template text as "creating the new template for validation"...passed
+Then Click on Save Template Template Should be Saved and Pop Up Message Should Be Displayed as "Template Saved successfully!".passed
+Then Click on Template Edit button then The edit template Should be displayed and title Contains as "Templates".passed
+Then To Veritying the choose Template edit button PopUp Window Cross and Cancel button.passed
+When clickon "Testing"delete button.........................................passed
+Then The delete PopUp Winddow should be Displayed With The Template name "Testing".passed
+Then To Verify delete Pop Up Window cancel and cross button.................passed
+Then Click on Continue button then template should be deleted and pop up message Should be display as "Template deleted successfully!".passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the Social Hiring Features" name="To Verify the Preview and Cancel button" time="35.851">
+<failure message="expected [SandWich Artist Going to Hire New Employees] but found [Job Opening at your local SUBWAY® Restaurant]" type="java.lang.AssertionError"><![CDATA[Given Navigate To The Social hirirng page...................................passed
+When Eneter The Sbuject Text as "SandWich Artist Going to Hire New Employees".passed
+And Click on Preview button.................................................passed
+Then Pop Up Window should be displayed with the tittle "Preview" sbuject should contains "SandWich Artist Going to Hire New Employees".failed
+When click on Pop Up Cancel button..........................................skipped
+And Click on Cancel button..................................................skipped
+Then Subject Should not contians with "SandWich Artist Going to Hire New Employees".skipped
+
+StackTrace:
+java.lang.AssertionError: expected [SandWich Artist Going to Hire New Employees] but found [Job Opening at your local SUBWAY® Restaurant]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at Parallel.SocialHiringTest.pop_up_window_should_be_displayed_with_the_tittle_something_sbuject_should_contains_something(SocialHiringTest.java:238)
+	at ✽.Pop Up Window should be displayed with the tittle "Preview" sbuject should contains "SandWich Artist Going to Hire New Employees"(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Socialhiring.feature:45)
+]]></failure>
+</testcase>
+<testcase classname="To validate the Social Hiring Features" name="To Verify The Subject Upload File button" time="20.676">
+<system-out><![CDATA[Given Navigate To The Social hirirng page...................................passed
+When Click on attachment button.............................................passed
+Then Upload Attachment PopUp Window Should be Open and Title should contains"Upload Attachment".passed
+When Upload the file........................................................passed
+Then File should be Uploaded with the name "sample-calm-eloquence-resume.pdf".passed
+Then Click on Pop up WinDow cancel button then the pop up window should be cancel.passed
+When Click on file remove button............................................passed
+When Click on attachment button.............................................passed
+Then The Uploaded "sample-calm-eloquence-resume.pdf" file should be deleted..passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the Social Hiring Features" name="To Validate The view button" time="33.559">
+<system-out><![CDATA[Given Navigate To The Social hirirng page...................................passed
+When Eneter The Sbuject Text as "SandWich Artist Going to Hire New Employees".passed
+When chose template as a "Create new template..."...........................passed
+And Click on Save template..................................................passed
+Then The template Should not be saved and Pop Up message Should Be Displayed as "Please enter name and description to save template.".passed
+When Enter New template Name as "Testing"...................................passed
+And enter new template text as "creating the new template for validation"...passed
+Then Click on Save Template Template Should be Saved and Pop Up Message Should Be Displayed as "Template Saved successfully!".passed
+When Choose "Testing" template..............................................passed
+When Click on view button...................................................passed
+Then Subject window should be displayed and subject should contains "creating the new template for validation".passed
+Then Click on Template Edit button then The edit template Should be displayed and title Contains as "Templates".passed
+Then To Veritying the choose Template edit button PopUp Window Cross and Cancel button.passed
+When clickon "Testing"delete button.........................................passed
+Then The delete PopUp Winddow should be Displayed With The Template name "Testing".passed
+Then To Verify delete Pop Up Window cancel and cross button.................passed
+Then Click on Continue button then template should be deleted and pop up message Should be display as "Template deleted successfully!".passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the Social Hiring Features" name="To Validate Preview,Send and Cancel button texts" time="17.233">
+<system-out><![CDATA[Given Navigate To The Social hirirng page...................................passed
+Then The Preview button should contain "Preview" text.......................passed
+Then The Send button should contains "Send" text............................passed
+Then The Cancel button should contains "Cancel" text........................passed
+]]></system-out>
+</testcase>
+</testsuite>

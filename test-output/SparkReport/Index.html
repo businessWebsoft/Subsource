@@ -1,0 +1,1784 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 25, 2021 03:01:24 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 25, 2021 03:01:24 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 25, 2021 03:11:09 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='21%'><b>3</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='78%'><b>11</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='54%'><b>47</b> steps passed</small></div>
+<div>
+<small data-tooltip='12%'><b>11</b> steps failed,
+<b>29</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"To test the Quiz Module functionality of Subsource":584.043
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@persent</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>build</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>user</td>
+<td>BussinessWebSoft</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>ExtentReport</td>
+</tr>
+<tr>
+<td>AppName</td>
+<td>subsource</td>
+</tr>
+<tr>
+<td>os</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 3,
+failChild: 11,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 47,
+failGrandChild: 11,
+warningGrandChild: 0,
+skipGrandChild: 29,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@persent</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To test the Quiz Module functionality of Subsource</p>
+            <p class="text-sm">
+              <span>15:01:25 PM</span> / <span>00:09:44:043</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">To test the Quiz Module functionality of Subsource</h5>
+<span class='badge badge-success'>06.25.2021 15:01:25</span>
+<span class='badge badge-danger'>06.25.2021 15:11:09</span>
+<span class='badge badge-default'>00:09:44:043</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To verify the basic functionality For TO button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.to_leave_as_a_emty_and_click_on_to_edit_button()">
+                <span>When To Leave as a emty and click on To Edit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.edit_button_pop_up_message_should_be_displayed()">
+                <span>Then Edit button pop up message should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.to_text_leave_as_a_emty_and_choose_the_test_template()">
+                <span>When TO text Leave as a emty and choose the Test template</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.quiz_should_not_be_sent_to_the_employees()">
+                <span>Then Quiz Should not be sent to the employees</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>To Verify the basic functionalitys for choose template edit button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.click_on_choose_template_edit_button()">
+                <span>When Click on choose template edit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.the_edit_pop_up_window_should_be_displayed()">
+                <span>Then The Edit pop up window should be displayed</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (85e34ed8cf7a7eea48cb1db504296af9)] -> xpath: //h4[contains(text(),'Templates')]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51241}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85e34ed8cf7a7eea48cb1db504296af9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.get_Choose_Template_Pop_Up_Text(QuizPage.java:283)
+	at Parallel.QuizTest.the_edit_pop_up_window_should_be_displayed(QuizTest.java:89)
+	at ?.The Edit pop up window should be displayed(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_Verify_the_basic_functionalitys_for_choose_template_edit_button
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>To validate the creating New Quiz Template,Edit Quiz Template Name and Delete the Quiz Teamplate</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.creating_new_quiz_template_as_something_title_is_something_description_something_and_passing_percentage_is_something(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>When creating new Quiz Template as "Quiz" , title is "General Question", Description "Every one has basic general knowledge" and passing percentage is "60"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.new_quiz_template_should_be_created_and_pop_up_message_sholud_be_displayed_as_something(java.lang.String)">
+                <span>Then New Quiz Template should be created and Pop up message Sholud be displayed as "Quiz template saved successfully."</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'Quiz template saved successfully.')]' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.template_Save_Pop_up(QuizPage.java:429)
+	at Parallel.QuizTest.new_quiz_template_should_be_created_and_pop_up_message_sholud_be_displayed_as_something(QuizTest.java:143)
+	at ?.New Quiz Template should be created and Pop up message Sholud be displayed as "Quiz template saved successfully."(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:18)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Quiz template saved successfully.')]"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 274f66b747b7d6bc5c71cd16781ad698
+*** Element info: {Using=xpath, value=//p[contains(text(),'Quiz template saved successfully.')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.template_Save_Pop_up(QuizPage.java:429)
+	at Parallel.QuizTest.new_quiz_template_should_be_created_and_pop_up_message_sholud_be_displayed_as_something(QuizTest.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.edit_something_template_name_to_something(java.lang.String,java.lang.String)">
+                <span>When Edit "Quiz" template name to "Quizbws"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.template_name_should_be_changed_and_pop_up_message_should_be_displayed_as_something(java.lang.String)">
+                <span>Then Template Name should be Changed and pop up message should be displayed as "Template name updated successfully."</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.click_on_something_delete_button(java.lang.String)">
+                <span>When Click on "Quizbws" Delete button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.quiz_template_should_be_deleted_and_pop_up_message_shoud_be_displayed_as_something(java.lang.String)">
+                <span>Then Quiz Template Should be Deleted and pop up Message Shoud be displayed as "Quiz Template deleted successfully!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_validate_the_creating_New_Quiz_Template,Edit_Quiz_Template_Name_and_Delete_the_Quiz_Teamplate
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log fail-bg mr-2">Fail</span>to verify the creating new quiz Teamplate by enetring invalid data</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.quiz_template_should_not_be_created_and_popup_message_should_be_displayed_as_something(java.lang.String)">
+                <span>Then Quiz Template Should not be created and PopUp message should be displayed as "Please check all Required Fields"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'Please check all Required Fields')]' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.required_field_Pop_Up(QuizPage.java:404)
+	at Parallel.QuizTest.quiz_template_should_not_be_created_and_popup_message_should_be_displayed_as_something(QuizTest.java:216)
+	at ?.Quiz Template Should not be created and PopUp message should be displayed as "Please check all Required Fields"(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:25)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Please check all Required Fields')]"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 91fa332750f32bedde66276682f3e207
+*** Element info: {Using=xpath, value=//p[contains(text(),'Please check all Required Fields')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.required_field_Pop_Up(QuizPage.java:404)
+	at Parallel.QuizTest.quiz_template_should_not_be_created_and_popup_message_should_be_displayed_as_something(QuizTest.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>to_verify_the_creating_new_quiz_Teamplate_by_enetring_invalid_data
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded3.png' src="../embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="41"><span class="badge log fail-bg mr-2">Fail</span>to verify the basic functionality for subscription</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.creating_new_quiz_as_something_title_is_something_description_something_and_passing_percentage_is_something(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>When creating new Quiz as "subscription" , title is "General Knowledge", Description "Creating Quiz for Subscription" and passing percentage is "70"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.the_quiz_should_be_creadted_and_pop_up_message_sholud_be_displayed_as_something(java.lang.String)">
+                <span>Then the quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'Quiz template saved successfully.')]' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.template_Save_Pop_up(QuizPage.java:429)
+	at com.qa.factory.UtilMethods.quiz_save_Successfully(UtilMethods.java:107)
+	at Parallel.QuizTest.the_quiz_should_be_creadted_and_pop_up_message_sholud_be_displayed_as_something(QuizTest.java:234)
+	at ?.the quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:29)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Quiz template saved successfully.')]"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7371c71acbec28d64c0e3323e07a3652
+*** Element info: {Using=xpath, value=//p[contains(text(),'Quiz template saved successfully.')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.template_Save_Pop_up(QuizPage.java:429)
+	at com.qa.factory.UtilMethods.quiz_save_Successfully(UtilMethods.java:107)
+	at Parallel.QuizTest.the_quiz_should_be_creadted_and_pop_up_message_sholud_be_displayed_as_something(QuizTest.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.navigate_to_the_subscription_page()">
+                <span>When navigate to the subscription page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.creating_new_subscription_list_as_something(java.lang.String)">
+                <span>And creating new subscription list as "testing"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.select_template_name_as_something(java.lang.String)">
+                <span>And select template name as "subscription"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.save_the_subscription_list_and_pop_up_should_be_displayed_as_something(java.lang.String)">
+                <span>Then save the subscription list and Pop up Should be displayed as "Rule created successfully."</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.user_navigate_to_the_message_page()">
+                <span>When user navigate to the message page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.let_delete_the_subscription_quizsomething_but_user_not_able_to_delete_delete_the_subscritpion_quiz_and_get_the_text_as_something(java.lang.String,java.lang.String)">
+                <span>Then Let delete the Subscription quiz"subscription" but user not able to delete delete the subscritpion Quiz and get the text as "This template can not be deleted as this is mapped with the subscription(s)."</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.navigate_to_the_subscription_list_page()">
+                <span>When navigate to the subscription list page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.validate_the_something_subscription_quiz_list_edit_button_function(java.lang.String)">
+                <span>Then Validate The "subscription" Subscription Quiz list edit Button function</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.changing_the_subscription_name_something_to_something_of_something_quiz(java.lang.String,java.lang.String,java.lang.String)">
+                <span>When Changing the Subscription name "testing" to "Edting" of "subscription" quiz</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.verify_the_basic_functionality_for_something_quiz_delete_button_and_get_the_validation_text_as_something(java.lang.String,java.lang.String)">
+                <span>Then Verify the basic functionality for "subscription" quiz delete button and get the validation text as "Rule deleted successfully."</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.user_navigate_to_the_message_page()">
+                <span>When user navigate to the message page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.let_delete_the_something_quiz_and_successfull_message_get_as_something(java.lang.String,java.lang.String)">
+                <span>Then Let delete the "subscription" quiz and successfull Message get as "Quiz Template deleted successfully!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>to_verify_the_basic_functionality_for_subscription
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded5.png' src="../embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>To Verify the basic functionality for Send Only button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.click_on_to_button_and_choose_the_to_recipients()">
+                <span>When Click on to button and Choose the to recipients</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.creating_the_new_quiz_as_something(java.lang.String)">
+                <span>And creating the new quiz as "recipients"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.lets_click_on_send_only_button_then_the_quiz_is_assigned_to_the_recipients_and_pop_up_message_is_displayed_as_something(java.lang.String)">
+                <span>Then Lets click on Send only button then the quiz is assigned to the recipients and pop up message is displayed as "Quiz assigned succesfully!"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="60"><span class="badge log fail-bg mr-2">Fail</span>To Validate the basic functionality for Save and Send button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.click_on_to_button_and_choose_the_to_recipients()">
+                <span>When Click on to button and Choose the to recipients</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span></span> is not clickable at point (378, 248). Other element would receive the click: <div _ngcontent-c1="" class="backdrop ng-star-inserted" style="border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);"></div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a269b5699e7989a3d1a28a9efc8c307
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.pages.QuizPage.clickon_Manager_Check_Box(QuizPage.java:563)
+	at Parallel.QuizTest.click_on_to_button_and_choose_the_to_recipients(QuizTest.java:342)
+	at ?.Click on to button and Choose the to recipients(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:49)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.creating_the_new_quiz_as_something(java.lang.String)">
+                <span>And creating the new quiz as "recipients"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.lets_click_on_save_and_send_button_then_the_quiz_is_savedassigned_to_the_recipients_and_pop_up_message_is_displayed_as_something(java.lang.String)">
+                <span>Then Lets click on Save and Send button then the quiz is saved,assigned to the recipients and pop up message is displayed as "Quiz assigned succesfully!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.navigate_to_the_quiz_message_page_and_click_on_teamplate_edit_button()">
+                <span>When navigate to the quiz message page and click on teamplate Edit button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.to_validate_wheather_the_something_quiz_saved_or_not(java.lang.String)">
+                <span>Then to validate wheather the "recipients" quiz saved or not</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.let_delete_the_something_quiz_and_successfull_message_is_displayed_as_something(java.lang.String,java.lang.String)">
+                <span>Then Let delete the "recipients" quiz and successfull Message is displayed as "Quiz Template deleted successfully!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_Validate_the_basic_functionality_for_Save_and_Send_button
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded4.png' src="../embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="73"><span class="badge log fail-bg mr-2">Fail</span>To Validate the basic functionality of Upate Template button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.creating_quiz_as_something_title_is_something_description_something_and_passing_percentage_is_something(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>When creating Quiz as "Update Template" , title is "General Knowledge", Description "Creating Quiz for Subscription" and passing percentage is "70"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.quiz_should_be_creadted_and_pop_up_message_sholud_be_displayed_as_something(java.lang.String)">
+                <span>Then Quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.select_new_template_as_something(java.lang.String)">
+                <span>When select new Template as "Update Template"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.let_changing_the_template_title_as_something(java.lang.String)">
+                <span>When Let changing the template title as "Upadte"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.click_on_update_template_button_then_the_template_should_be_updated_and_popup_message_should_be_displayed_as_something(java.lang.String)">
+                <span>Then click on update Template button then The template should be Updated and PopUp message should be displayed as "Quiz template updated successfully."</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[@title='Save Update Selected']' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.factory.WebDriverUtil.waitForElementToBeClickable(WebDriverUtil.java:27)
+	at com.pages.QuizPage.clickon_Update_Template_Button(QuizPage.java:449)
+	at Parallel.QuizTest.click_on_update_template_button_then_the_template_should_be_updated_and_popup_message_should_be_displayed_as_something(QuizTest.java:415)
+	at ?.click on update Template button then The template should be Updated and PopUp message should be displayed as "Quiz template updated successfully."(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:61)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Save Update Selected']"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57934}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab64b4837a53be985b431ef495a62abb
+*** Element info: {Using=xpath, value=//button[@title='Save Update Selected']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.factory.WebDriverUtil.waitForElementToBeClickable(WebDriverUtil.java:27)
+	at com.pages.QuizPage.clickon_Update_Template_Button(QuizPage.java:449)
+	at Parallel.QuizTest.click_on_update_template_button_then_the_template_should_be_updated_and_popup_message_should_be_displayed_as_something(QuizTest.java:415)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.let_delete_the_something_quiz_and_pop_up_message_should_be_displayed_as_something(java.lang.String,java.lang.String)">
+                <span>Then let delete the "Update Template" quiz and pop up message should be displayed as "Quiz Template deleted successfully!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_Validate_the_basic_functionality_of_Upate_Template_button
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded9.png' src="../embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="91"><span class="badge log fail-bg mr-2">Fail</span>To verify the basic functionality of Select Roles button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.click_on_to_button_and_nagivate_to_select_role()">
+                <span>When Click on To button and nagivate to Select Role</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label class="cursor-pointer lmargin30 orange-color">...</label> is not clickable at point (160, 309). Other element would receive the click: <div class="new-form clearfix"></div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a38f17c26df899ec4de6637a728f7d44
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.pages.QuizPage.clickon_Select_Role_Button(QuizPage.java:584)
+	at Parallel.QuizTest.click_on_to_button_and_nagivate_to_select_role(QuizTest.java:436)
+	at ?.Click on To button and nagivate to Select Role(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:65)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.the_something_window_is_dispalyed(java.lang.String)">
+                <span>Then The "Additional Roles" window is Dispalyed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_verify_the_basic_functionality_of_Select_Roles_button
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded6.png' src="../embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="106"><span class="badge log pass-bg mr-2">Pass</span>To Validate the basic functionality of additional role check box</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.click_on_to_button_and_nagivate_to_select_role()">
+                <span>When Click on To button and nagivate to Select Role</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.click_on_all_the_check_boxes()">
+                <span>And Click on all the check boxes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.click_on_save_button()">
+                <span>And Click on save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.all_something_roles_shoulb_be_selected(java.lang.String)">
+                <span>Then all "12" roles shoulb be selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="117"><span class="badge log fail-bg mr-2">Fail</span>To Validate the basic finctionality of Plus button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.select_the_new_template_as_something(java.lang.String)">
+                <span>When Select the new Template as "Create new template..."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.click_on_plus_button_up_to_100_questions_then_the_something_should_be_created(java.lang.String)">
+                <span>Then Click on Plus button up to 100 Questions then the "Q100." should be created.</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i aria-hidden="true" class="fa fa-plus add-question-icon ng-star-inserted" title="Add Question"></i> is not clickable at point (1209, 732). Other element would receive the click: <div _ngcontent-c1="" class="backdrop ng-star-inserted" style="border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);"></div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a48e2288354f8901606992be06daec93
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.pages.QuizPage.clickon_100Question(QuizPage.java:631)
+	at Parallel.QuizTest.click_on_plus_button_up_to_100_questions_then_the_something_should_be_created(QuizTest.java:472)
+	at ?.Click on Plus button up to 100 Questions then the "Q100." should be created.(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:76)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_Validate_the_basic_finctionality_of_Plus_button
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded7.png' src="../embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="126"><span class="badge log fail-bg mr-2">Fail</span>To Verify the copy button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.select_the_new_template_as_something(java.lang.String)">
+                <span>When Select the new Template as "Create new template..."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.fill_the_somethingtextselectsomething_optionfill_the_options_as_somethingsomethingsomething_and_select_answer(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And Fill The "Question"text,Select"Radio Button" option,fill the options as "Answer1","Answer2","Answer3" and select answer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.click_on_copy_button()">
+                <span>And Click on copy button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i aria-hidden="true" class="fa fa-clone" title="Copy Question"></i> is not clickable at point (1134, 738). Other element would receive the click: <div _ngcontent-c1="" class="backdrop ng-star-inserted" style="border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);"></div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55558}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6901ccd13e522a389f3e4597afde29a4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.pages.QuizPage.clickon_Copy_Button(QuizPage.java:304)
+	at Parallel.QuizTest.click_on_copy_button(QuizTest.java:488)
+	at ?.Click on copy button(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:81)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.the_copy_something_should_be_created_with_the_somethingoptionoptions_as_somethingsomethingsomething(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then The copy "Question" should be created with the "Radio Button"option,options as "Answer1","Answer2","Answer3"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_Verify_the_copy_button
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded8.png' src="../embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="137"><span class="badge log fail-bg mr-2">Fail</span>To Valiadte The basic functionality of Save new tenplate</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.QuizTest.creating_quiz_as_something_title_is_something_description_something_and_passing_percentage_is_something(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>When creating Quiz as "Update Template" , title is "General Knowledge", Description "Creating Quiz for Subscription" and passing percentage is "70"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.quiz_should_be_creadted_and_pop_up_message_sholud_be_displayed_as_something(java.lang.String)">
+                <span>Then Quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'Quiz template saved successfully.')]' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.template_Save_Pop_up(QuizPage.java:429)
+	at com.qa.factory.UtilMethods.quiz_save_Successfully(UtilMethods.java:107)
+	at Parallel.QuizTest.quiz_should_be_creadted_and_pop_up_message_sholud_be_displayed_as_something(QuizTest.java:401)
+	at ?.Quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:86)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Quiz template saved successfully.')]"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7106eff7b7619d2512d91ff1aab417b4
+*** Element info: {Using=xpath, value=//p[contains(text(),'Quiz template saved successfully.')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.factory.WebDriverUtil.waitForElementVisiblity(WebDriverUtil.java:49)
+	at com.pages.QuizPage.template_Save_Pop_up(QuizPage.java:429)
+	at com.qa.factory.UtilMethods.quiz_save_Successfully(UtilMethods.java:107)
+	at Parallel.QuizTest.quiz_should_be_creadted_and_pop_up_message_sholud_be_displayed_as_something(QuizTest.java:401)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.select_new_template_as_something(java.lang.String)">
+                <span>When select new Template as "Update Template"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.let_changing_the_template_title_as_something(java.lang.String)">
+                <span>When Let changing the template title as "Upadte"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.clickon_save_new_template_button()">
+                <span>When clickon save new template button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.enter_the_new_something(java.lang.String)">
+                <span>When Enter the new "Template Name"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Parallel.QuizTest.the_pop_up_message_should_be_display_assomething(java.lang.String)">
+                <span>Then the pop up message should be display as"Quiz template saved successfully."</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_Valiadte_The_basic_functionality_of_Save_new_tenplate
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded11.png' src="../embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="144"><span class="badge log fail-bg mr-2">Fail</span>To validate the Manager Edit button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.QuizTest.user_navigate_to_the_quiz_page()">
+                <span>Given user navigate to the Quiz page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Parallel.QuizTest.click_on_to_button_and_manager_check_box()">
+                <span>When Click on To button and Manager Check box</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span></span> is not clickable at point (378, 248). Other element would receive the click: <div _ngcontent-c1="" class="backdrop ng-star-inserted" style="border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);"></div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PU3962Q', ip: '192.168.1.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59460}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 285f1b00b49c4aef99947075b10d8e34
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.pages.QuizPage.clickon_Manager_Check_Box(QuizPage.java:563)
+	at Parallel.QuizTest.click_on_to_button_and_manager_check_box(QuizTest.java:537)
+	at ?.Click on To button and Manager Check box(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Quiz.feature:94)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_validate_the_Manager_Edit_button
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded10.png' src="../embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@persent</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@persent</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To verify the basic functionality For TO button</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To verify the basic functionality For TO button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:02:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Then The Edit pop up window should be displayed</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To Verify the basic functionalitys for choose template edit button.Then The Edit pop up window should be displayed</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Then New Quiz Template should be created and Pop up message Sholud be displayed as "Quiz template saved successfully."</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To validate the creating New Quiz Template,Edit Quiz Template Name and Delete the Quiz Teamplate.Then New Quiz Template should be created and Pop up message Sholud be displayed as "Quiz template saved successfully."</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='34'>Then Quiz Template Should not be created and PopUp message should be displayed as "Please check all Required Fields"</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.to verify the creating new quiz Teamplate by enetring invalid data.Then Quiz Template Should not be created and PopUp message should be displayed as "Please check all Required Fields"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:05:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Then the quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.to verify the basic functionality for subscription.Then the quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:07:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='101'>Then click on update Template button then The template should be Updated and PopUp message should be displayed as "Quiz template updated successfully."</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To Validate the basic functionality of Upate Template button.Then click on update Template button then The template should be Updated and PopUp message should be displayed as "Quiz template updated successfully."</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:09:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='154'>Then Quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To Valiadte The basic functionality of Save new tenplate.Then Quiz should be creadted and Pop up message Sholud be displayed as "Quiz template saved successfully."</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:06:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='65'>When Click on to button and Choose the to recipients</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To Validate the basic functionality for Save and Send button.When Click on to button and Choose the to recipients</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:07:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='102'>When Click on To button and nagivate to Select Role</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To verify the basic functionality of Select Roles button.When Click on To button and nagivate to Select Role</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:08:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='123'>Then Click on Plus button up to 100 Questions then the "Q100." should be created.</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To Validate the basic finctionality of Plus button.Then Click on Plus button up to 100 Questions then the "Q100." should be created.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:08:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='133'>And Click on copy button</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To Verify the copy button.And Click on copy button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:09:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='150'>When Click on To button and Manager Check box</a>
+<div class="">
+<span class="badge badge-default">To test the Quiz Module functionality of Subsource.To validate the Manager Edit button.When Click on To button and Manager Check box</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

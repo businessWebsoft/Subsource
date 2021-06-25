@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 23 15:18:09 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>140 seconds (140034 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Parallel.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: Parallel.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Validate The Select Shop for posting", "Optional[To validate the Social Hiring Features]"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a&gt;...&lt;/a&gt; is not clickable at point (165, 239). Other element would receive the click: &lt;div _ngcontent-c1=&quot;&quot; class=&quot;backdrop ng-star-inserted&quot; style=&quot;border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=91.0.4472.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-PU3962Q&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7579599350585dbbf468243e516d0b1a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
+	at com.pages.SocialHiringPage.click_on_Select_Shops_For_Posting(SocialHiringPage.java:153)
+	at Parallel.SocialHiringTest.click_on_select_shops_for_posting_link(SocialHiringTest.java:51)
+	at ?.Click on Select Shops for posting link(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Socialhiring.feature:13)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1333126005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1333126005'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a&gt;...&lt;/a&gt; is not clickable at point (165, 239). Other element would receive the click: &lt;div _ngcontent-c1=&quot;&quot; class=&quot;backdrop ng-star-inserted&quot; style=&quot;border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=91.0.4472.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-PU3962Q&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7579599350585dbbf468243e516d0b1a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
+	at com.pages.SocialHiringPage.click_on_Select_Shops_For_Posting(SocialHiringPage.java:153)
+	at Parallel.SocialHiringTest.click_on_select_shops_for_posting_link(SocialHiringTest.java:51)
+	at ?.Click on Select Shops for posting link(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Socialhiring.feature:13)
+</pre></div></td>
+<td>27</td>
+<td>Parallel.ParallelRun@4c70fda8</td></tr>
+<tr>
+<td title='Parallel.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: Parallel.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Validate The select shops for posting window", "Optional[To validate the Social Hiring Features]"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a&gt;...&lt;/a&gt; is not clickable at point (165, 239). Other element would receive the click: &lt;div _ngcontent-c1=&quot;&quot; class=&quot;backdrop ng-star-inserted&quot; style=&quot;border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=91.0.4472.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-PU3962Q&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 20bb0dbecdc343d3a9933c01f3a7401c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
+	at com.pages.SocialHiringPage.click_on_Select_Shops_For_Posting(SocialHiringPage.java:153)
+	at Parallel.SocialHiringTest.click_on_select_shops_for_posting_link(SocialHiringTest.java:51)
+	at ?.Click on Select Shops for posting link(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Socialhiring.feature:7)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1690020689", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690020689'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a&gt;...&lt;/a&gt; is not clickable at point (165, 239). Other element would receive the click: &lt;div _ngcontent-c1=&quot;&quot; class=&quot;backdrop ng-star-inserted&quot; style=&quot;border-radius: 0px; background-color: rgba(0, 0, 0, 0.3);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=91.0.4472.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-PU3962Q&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BWS-TE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 20bb0dbecdc343d3a9933c01f3a7401c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
+	at com.pages.SocialHiringPage.click_on_Select_Shops_For_Posting(SocialHiringPage.java:153)
+	at Parallel.SocialHiringTest.click_on_select_shops_for_posting_link(SocialHiringTest.java:51)
+	at ?.Click on Select Shops for posting link(file:///C:/Users/BWS-Tester/git/SubSource/src/test/resources/Parallel/Socialhiring.feature:7)
+</pre></div></td>
+<td>28</td>
+<td>Parallel.ParallelRun@4c70fda8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Parallel.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: Parallel.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Validate The Subject Text", "Optional[To validate the Social Hiring Features]"</td>
+<td></td>
+<td>45</td>
+<td>Parallel.ParallelRun@4c70fda8</td></tr>
+<tr>
+<td title='Parallel.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: Parallel.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Validate Create new Template and Delete Template", "Optional[To validate the Social Hiring Features]"</td>
+<td></td>
+<td>54</td>
+<td>Parallel.ParallelRun@4c70fda8</td></tr>
+<tr>
+<td title='Parallel.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: Parallel.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Verify The Subject Upload File button", "Optional[To validate the Social Hiring Features]"</td>
+<td></td>
+<td>21</td>
+<td>Parallel.ParallelRun@4c70fda8</td></tr>
+<tr>
+<td title='Parallel.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: Parallel.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Verify the Preview and Cancel button", "Optional[To validate the Social Hiring Features]"</td>
+<td></td>
+<td>31</td>
+<td>Parallel.ParallelRun@4c70fda8</td></tr>
+<tr>
+<td title='Parallel.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: Parallel.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Validate Preview,Send and Cancel button texts", "Optional[To validate the Social Hiring Features]"</td>
+<td></td>
+<td>16</td>
+<td>Parallel.ParallelRun@4c70fda8</td></tr>
+<tr>
+<td title='Parallel.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: Parallel.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Validate The view button", "Optional[To validate the Social Hiring Features]"</td>
+<td></td>
+<td>30</td>
+<td>Parallel.ParallelRun@4c70fda8</td></tr>
+</table><p>
+</body>
+</html>

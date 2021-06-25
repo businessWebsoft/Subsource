@@ -1,0 +1,231 @@
+{
+	"shopField": [
+		{
+			"shop": "106"
+		}
+	],
+	"shopValidEmail": [
+		{
+			"shop": "100",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45623",
+			"rent": "546",
+			"cost": "451",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	],
+	"shopInvalidEmail": [
+		{
+			"shop": "101",
+			"email": "bwsxyz",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45623",
+			"rent": "546",
+			"cost": "451",
+			"food_Cost_Distributor": "CTI FOODS"
+		}
+	],
+	"shopAddress": [
+		{
+			"address1": "Zirakpur1234",
+			"address2": "0021baltana"
+		}
+	],
+	"shopValidZipcode": [
+		{
+			"shop": "103",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45563",
+			"rent": "546",
+			"cost": "451",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	],
+	"shopInalidZipcode": [
+		{
+			"shop": "104",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45ABC",
+			"rent": "546",
+			"cost": "451",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	],
+	"shopValidVariableRentAndRoyality": [
+		{
+			"shop": "105",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45320",
+			"rent": "546",
+			"cost": "451",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	],
+	"shopInvalidVariableRentAndRoyality": [
+		{
+			"shop": "106",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45965",
+			"rent": "ABC",
+			"cost": "451",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	],
+	"shopValidFixedMiscCosts": [
+		{
+			"shop": "108",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45965",
+			"rent": "200",
+			"cost": "400",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	],
+	"shopInvalidFixedMiscCosts": [
+		{
+			"shop": "109",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45965",
+			"rent": "200",
+			"cost": "ABC",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	],
+	"shopDateCheck": [
+		{
+			"shop": "110",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45965",
+			"rent": "200",
+			"cost": "300",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	],
+	"shopEmailFormat": [
+		{
+			"shop": "115",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45965",
+			"rent": "200",
+			"cost": "300",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC",
+			"email1": "bws1@gmail.com",
+			"email2": "bws3@gmail.com",
+			"email3": "bws5@gmail.com",
+			"email4": "bws7@gmail.com",
+			"email5": "bws9@gmail.com",
+			"email6": "bws11@gmail.com"
+		}
+	],
+	"shopTextFieldNumber": [
+		{
+			"shop": "120"
+		}
+	],
+	"shopTextFieldCharacter": [
+		{
+			"shop": "ABDE"
+		}
+	],
+	"shopPageValidation": [
+		{
+			"address2": "baltana",
+			"rent": "200",
+			"cost": "300",
+			"email1": "bws1@gmail.com",
+			"email2": "bws3@gmail.com",
+			"email3": "bws5@gmail.com",
+			"email4": "bws7@gmail.com",
+			"email5": "bws9@gmail.com",
+			"email6": "bws11@gmail.com"
+		}
+	],
+	"shopPageValidationAgain": [
+		{
+			"shop": "115",
+			"address2": "baltana",
+			"rent": "200",
+			"cost": "300",
+			"email1": "bws1@gmail.com",
+			"email2": "bws3@gmail.com",
+			"email3": "bws5@gmail.com",
+			"email4": "bws7@gmail.com",
+			"email5": "bws9@gmail.com",
+			"email6": "bws11@gmail.com"
+		}
+	],
+	"shopUpdate": [
+		{
+			"shop": "150",
+			"email": "bwsxyz@gmail.com",
+			"region": "Central Region",
+			"address1": "Zirakpur",
+			"address2": "baltana",
+			"city": "Chandigarh",
+			"state": "Alabama",
+			"zipCode": "45563",
+			"rent": "546",
+			"cost": "451",
+			"food_Cost_Distributor": "CTI FOODS",
+			"company": "Children Hospital Subs LLC"
+		}
+	]
+}
